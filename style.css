@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+
+   body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+   }
+
+   html{
+    font-size: 12px;
+   }
+
+h1 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.5rem;
+}
+
+   header {
+    height: 100vh;
+    background-image: url(https://picsum.photos/id/668/1000/800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+   }
+
+   header h1 {
+    font-size: 4rem;
+    text-align: center;
+   }
+
+
+   #intro div{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(38, 37, 37);
+   }
+
+
+   #business, #art, #computing, #education {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: none;
+    color: white;
+   }
+
+   #business img, #art img, #computing img, #education img {
+    width: 90px;
+    height: auto;
+    display: block;
+   }
+
+   #business h2, #art h2, #computing h2, #education h2 {
+    justify-content: center;
+    align-items: center;
+   }
+
+   #major{
+    background-color: #eeeeee;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   #major article{
+    padding: 30px;
+    padding-top: 0px;
+   }
+
+   #major article:nth-child(odd) h1,
+   #major article:nth-child(odd) p {
+    padding-left: 80px;
+    padding-top:0;
+   }
+
+   #major article h1 {
+    margin-bottom: 10px;
+   }
+
+   #major article:nth-child(even) h1,
+   #major article:nth-child(even) p {
+    padding-right: 80px;
+    padding-top:0;
+   }
+
+   #major article:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+   }
+
+   #major article:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+   }
+
+   ul {
+    background-color: gray;
+    align-items: center;
+   }
+
+   #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    padding: 50px;
+   }
+
+    #contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    }
+
+    #contact ul li a img {
+        width: 20%;
+        height: auto;
+        min-width: 60px;
+    }
+
+    #contact div {
+        font-size: 25px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        color: white;
+    }
+
+   img {
+    width: 100%;
+    height: auto;
+    display: block;
+   }
+
+
+   @media (max-width: 800px) {
+    #intro>div {
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+    #major article:nth-child(odd),
+    #major article:nth-child(even) {
+
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+
+    #major article:nth-child(odd) h1,
+    #major article:nth-child(odd) p {
+     padding-left: 0px;
+     padding-right: 80px;
+     padding-top:0;
+    }
+
+    #major article:nth-child(odd) p,
+    #major article:nth-child(even) p{
+    padding-right: 0px;
+    }
+
+     
+    #contact ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #contact ul li a img {
+        width: 20%;
+        height: auto;
+        width: 60px;
+    }
+
+    header h1 {
+        word-wrap: break-word; 
+    }
+
+    header {
+        padding: 80px;
+    }
+   }
+ 
+
